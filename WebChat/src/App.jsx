@@ -212,9 +212,8 @@ function App() {
             return (
               <div
                 key={msg.id}
-                className={`my-2 flex w-full items-start ${
-                  isMyMessage ? "justify-end" : "justify-start"
-                }`}
+                className={`my-2 flex w-full items-start ${isMyMessage ? "justify-end" : "justify-start"
+                  }`}
               >
                 {!isMyMessage && (
                   <img
@@ -226,11 +225,10 @@ function App() {
 
                 <div className="flex flex-col max-w-[70%]">
                   <div
-                    className={`p-3 rounded-xl break-words ${
-                      isMyMessage
-                        ? "bg-blue-600 text-white rounded-br-none"
-                        : "bg-gray-700 text-white rounded-bl-none"
-                    }`}
+                    className={`p-3 rounded-xl break-words ${isMyMessage
+                      ? "bg-blue-600 text-white rounded-br-none"
+                      : "bg-gray-700 text-white rounded-bl-none"
+                      }`}
                   >
                     {!isMyMessage && (
                       <span className="text-xs font-bold text-gray-300 block mb-1">
@@ -240,9 +238,8 @@ function App() {
                     <p>{msg.message}</p>
                   </div>
                   <span
-                    className={`text-[10px] text-gray-400 mt-1 ${
-                      isMyMessage ? "text-right" : "text-left"
-                    }`}
+                    className={`text-[10px] text-gray-400 mt-1 ${isMyMessage ? "text-right" : "text-left"
+                      }`}
                   >
                     {formatTime(msg.timestamp)}
                   </span>

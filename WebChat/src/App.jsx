@@ -7,6 +7,7 @@ function App() {
   const [newMessage, setNewMessage] = useState("");
   const [usersOnline, setUsersOnline] = useState([]);
 
+<<<<<<< HEAD
   const chatContainerRef = useRef(null);
   const channelRef = useRef(null);
 
@@ -282,3 +283,6 @@ function App() {
 };
 
 export default App;
+=======
+export default App
+>>>>>>> 884ebd5 (Corrigindo ortografia)
